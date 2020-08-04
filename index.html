@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza Store</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <h1 id="piz-palace" class="">P<span id="spantext">Iz</span>Za palace!</h1>
+    <div class="navi">
+        <ul class="nav-items">
+            <li><a href="#menus">Menu</a></li>
+            <li><a href="#order">Orders</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<div class="landing">
+    <div class="overlay">
+        <div id="push"></div>
+        <div class="landing-text">
+            <h1 class="text-white text-center"><span class="pizz">Pizza </span><span class="exc">palace!</span></h1>
+            <h2 class="text-white text-center">Get your pizza in an instant.</h2>
+        </div>
+        <div class="h-buttons text-center">
+            <a href="#menus">
+                <button class="btn bg-info mx-auto d-block menu-btn">menu</button>
+            </a>
+            <div class="socials">
+                <a href=""><span class="fab fa-facebook icon_facebook"></span></a>
+                <a href=""><span class="fab fa-twitter icon_twitter"></span></a>
+                <a href=""><span class="fab fa-google-plus icon_googlep"></span></a>
+                <a href=""><span class="fab fa-linkedin icon_linkedin"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="menus"></div>
+<br>
+<div class="menu col-md-12">
+    <div class="menu-overlay">
+        <h1 class="text-center" id="menu">Menu</h1>
+            <figure class="col-sm-4">
+               <img src="images/smallp.jpg" alt="small-pizza" class="wiggle">
+                <figcaption class="text-black">Small<br>Ksh. 500</figcaption>
+            </figure>
+            <figure class="col-sm-4">
+                <img src="images/mediump.jpg" alt="medium-pizza" class="wiggle">
+                <figcaption class="text-black">Medium<br>Ksh. 700</figcaption>
+            </figure>
+            <figure class="col-sm-4">
+                <img src="images/largep.jpg" alt="large-pizza" class="wiggle">
+                <figcaption class="text-black">Large<br>Ksh. 1000</figcaption>
+            </figure>
+    </div>
+</div>
+
+<div class="welcome" id="welcome">
+    <br><br><br><br>
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="images/meal.jpg" alt="chef-cartoon" class="karibu-img">
+            </div>
+            <div class="col-md-6 Welcome-txt">
+                <h1 class="text-center txt txt-big">This is <span class="pizz">Pizza </span><span class="exc">palace!</span>
+                </h1>
+                <p class="text-center txt">Delicious flavours of pizza</p>
+                <p class="text-center txt">Pizza straight from our kitchen to your couch.</p>
+                <a href="#menus">
+                    <button class="btn bg-info mx-auto d-block menu-btn">Menu</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="orders" id="order">
+    <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+    <div class="form-group row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 order-overlay text-center">
+            <form class="col-sm-6 offset-sm-3 text-center">
+                <label>Choose a flavour:</label>
+                <select class="custom-select custom-select-md mb-3 flavour" required>
+                    <option value="Chicken and Meatballs">Chicken and Meatballs</option>
+                    <option value="Buffalo Beef">Buffalo Beef</option>
+                    <option value="Sausage and spice">Sausage and spice</option>
+                    <option value="BBQ Steak">BBQ Steak</option>
+                    <option value="Magheritta Pizza">Magheritta Pizza</option>
+                    <option value="Vegan salad">Veagan salad</option>
+                    <option value="crazy meaty">Crazy meaty</option>
+                    <option value="ella"> Pizza ella</option>
+                </select>
+                <label>Pick a Size:</label>
+                <select class="custom-select custom-select-md mb-3" id="size" required>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="crust">Choose your favorite Crust:</label>
+                <select class="custom-select custom-select-md mb-3" id="crust" required>
+                    <option value="thin">Thin Crust @ Ksh. 90</option>
+                    <option value="thick">Thick Crust @ Ksh. 110</option>
+                    <option value="flatbread">FlatBread Crust @ sh. 160</option>
+                    <option value="custom">Custom Crust @ sh. 200</option>
+                </select>
+                <label>Select Your favourite Toppings</label>
+                <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                    <option value="crazy meaty">crazy meaty @ sh. 110</option>
+                    <option value="onions">Onions @ sh. 90</option>
+                    <option value="tomato">Tomato @ sh. 60</option>
+
+                    <option value="pepper"> Pepper @ sh. 80</option>
+                    <option value=""></option>
+                    <option value="persley">persley @ sh. 120</option>
+                    <option value="sweet pine">sweet pine @ sh. 120</option>
+                    <option value="brocolli">brocolli @ sh. 120</option>
+                    <option value="bacon">Macon @ sh. 120</option>
+                    <option value="buffalo">buffalo @ sh. 120</option>
+                    <option value=""></option>
+                    <option value="beef">Beef Peperoni @ sh. 170</option>
+                    <option value="chicken">Sausage and spice Chicken @ sh. 170</option>
+                </select>
+                <label for="number">Number of Pizza's</label>
+                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+
+
+            </form>
+            <a href="#summary">
+                <button type="submit" class="btn btn-success checkout" id="checkout">
+                    Checkout
+                </button>
+            </a>
+
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
+<div class="order-summary" id="sum-order">
+    <h1 class="text-center" id="summary">Order Summary</h1>
+    <h2 class="text-center summary">Hope you are well, This is your order for today:</h2>
+    <ol id="list" class="text-center sum">
+    </ol>
+
+
+    <div class="cdata-overlay">
+        <div class="customerdata row">
+            <div class="col-sm-3"></div>
+            <form action="" class="form-group col-sm-6 data">
+                <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+                <input type="text" class="form-control cdata" placeholder="Enter the location: ">
+                <button class="btn bg-info text-center d-block mx-auto go">Have it at home</button>
+            </form>
+
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    <div class="d-block mx-auto text-center">
+        <button class='deliver'>Have it at home</button>
+        <button class='delivernot'>Click and collect</button>
+    </div>
+</div>
+
+<div class="contacts">
+    <div class="contact-overlay">
+        <h1 class="text-center contact text-black">Contacts:</h1>
+        <div class="center">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 subs">
+              <center>  <h1 class="text-black text-center"> Contact Pizza Palace </h1></center>
+                <p class="text-center">0710752647, mitai25nicole@gmail.com</p>
+                <p class="text-center">Reach us on Instagram and Twitter for deliveries with the handle @ Pizza Motto </p>
+                <form>
+                    <div class="email-info">
+                        <div class="form-group fill-all-form">
+                            <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email"
+                                   required="">
+                        </div>
+                    </div>
+                    <div class=" email-info text-center">
+                        <button class="btn click-me" onclick="subscribe();">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/scrollify.js"></script>
+</html>
